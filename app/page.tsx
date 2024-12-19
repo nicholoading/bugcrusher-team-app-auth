@@ -42,6 +42,7 @@ export default function HomePage() {
         alert("Something went wrong.");
       }
     } catch (error) {
+      console.error("Error submitting form:", error);
       alert("Submission failed. Please try again.");
     } finally {
       setLoading(false);
